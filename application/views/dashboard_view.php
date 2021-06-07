@@ -80,7 +80,86 @@
       </div>
     </div>
     <div class="row">
+      <div class="col-md-6">
+        <div class="box">
+          <div class="box-header bg-info">
+            <h4 class="text-primary">Anggota paling aktif</h4>
+          </div>
+          <div class="box-body">
+            <p class="text-center">
+              <strong>Anggota Paling Aktif meminjam</strong>
+            </p>
+
+            <div class="progress-group">
+              <span class="progress-text">Nama Anggota</span>
+              <span class="progress-number"><b>160</b>/200</span>
+
+              <div class="progress sm">
+                <div class="progress-bar progress-bar-aqua" style="width: 60%"></div>
+              </div>
+            </div>
+
+          </div>
+          <div class="box-footer">
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="box">
+          <div class="box-header bg-info">
+            <h4 class="text-primary">Buku paling sering dipinjam</h4>
+          </div>
+          <div class="box-body">
+            <p class="text-center">
+              <strong>Buku paling sering dipinjam</strong>
+            </p>
+
+            <div class="progress-group">
+              <span class="progress-text">Judul Buku</span>
+              <span class="progress-number"><b>110</b>/200</span>
+
+              <div class="progress sm">
+                <div class="progress-bar progress-bar-aqua" style="width: 50%"></div>
+              </div>
+            </div>
+
+          </div>
+          <div class="box-footer">
+
+          </div>
+        </div>
+      </div>
     </div>
+
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="box">
+          <div class="box-header with-border">
+            <h3 class="box-title">Grafik jumlah peminjam</h3>
+          </div>
+          <!-- /.box-header -->
+          <div class="box-body">
+            <div class="row">
+              <p class="text-center">
+                <strong>Periode 1 Januari 2021 - 30 Juni 2021</strong>
+              </p>
+
+              <div class="chart">
+                <!-- Sales Chart Canvas -->
+                <canvas id="salesChart" style="height: 180px;"></canvas>
+              </div>
+              <!-- /.chart-responsive -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
   </section>
 </div>
 <!-- /.content -->
