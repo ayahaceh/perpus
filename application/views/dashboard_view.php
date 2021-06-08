@@ -225,7 +225,7 @@
               <?php foreach ($terbaru as $ag) {
                 $foto = $ag['sampul'];
                 if ($foto == "") {
-                  $foto = 'default.png';
+                  $foto = 'buku_default.jpg';
                 }
               ?>
                 <li class="item">
