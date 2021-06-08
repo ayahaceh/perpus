@@ -13,7 +13,7 @@
 
                     <div class="chart">
                         <!-- Sales Chart Canvas -->
-                        <canvas id="bulanChart" style="height: 180px;"></canvas>
+                        <canvas id="bulanChart" style="height: 280px;"></canvas>
                     </div>
                     <!-- /.chart-responsive -->
                 </div>
