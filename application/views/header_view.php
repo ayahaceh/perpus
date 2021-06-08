@@ -10,6 +10,7 @@
 
 
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <link rel="shortcut icon" type="image/png" href="<?php echo base_url(); ?>assets_style/assets/dist/img/logo.png">
   <!-- Bootstrap 3.3.7 -->
   <link rel="stylesheet" href="<?php echo base_url(); ?>assets_style/assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
   <!-- Font Awesome -->
@@ -68,7 +69,7 @@
         <!-- logo for regular state and mobile devices -->
         <small> <span class="logo-lg">SIPUS</span> </small>
       </a>
-      
+
       <!-- Header Navbar: style can be found in header.less -->
       <nav class="navbar navbar-static-top">
         <!-- Sidebar toggle button-->
