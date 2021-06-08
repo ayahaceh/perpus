@@ -88,7 +88,7 @@
             <h3 class="box-title">Grafik jumlah peminjam</h3>
           </div> -->
           <!-- /.box-header -->
-          <div class="box-body">
+          <div class="box-body bg-success">
             <div class="row">
               <p class="text-center">
                 <strong>Grafik jumlah Buku Terpinjam Tahun 2021</strong>
@@ -221,6 +221,9 @@
         <div class="box box-success">
           <!-- /.box-header -->
           <div class="box-body">
+            <p class="text-center">
+              <strong>Buku terbaru</strong>
+            </p>
             <ul class="products-list product-list-in-box">
               <?php foreach ($terbaru as $ag) {
                 $foto = $ag['sampul'];

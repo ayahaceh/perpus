@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 08, 2021 at 12:39 PM
+-- Generation Time: Jun 08, 2021 at 12:53 PM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 7.4.13
 
@@ -69,18 +69,18 @@ CREATE TABLE `tbl_buku` (
 --
 
 INSERT INTO `tbl_buku` (`id_buku`, `buku_id`, `id_kategori`, `id_rak`, `sampul`, `isbn`, `lampiran`, `title`, `penerbit`, `pengarang`, `thn_buku`, `isi`, `jml`, `tgl_masuk`) VALUES
-(1, 'BK001', 1, 1, 'default.jpg', '2142352 235215413', 'default.pdf', 'Meneropong Gunung', 'Gunung Galunggung', 'Doni Marsela', '2020', 'Isi Buku', 10, '2020-12-12'),
-(2, 'BK002', 2, 2, 'default.jpg', '223521 4353451', 'default.pdf', 'Membuka Jendela', 'Gorong - gorong', 'Bodiandul', '2019', 'Isi bukunya indah sekali', 21, '2020-11-12'),
-(3, 'BK003', 3, 3, 'default.jpg', '2142352 235215413', 'default.pdf', 'Merpati Putih', 'Gunung Galunggung', 'Doni Marsela', '2020', 'Isi Buku', 10, '2020-12-12'),
-(4, 'BK004', 4, 4, 'default.jpg', '223521 4353451', 'default.pdf', 'Mengapa Bertanya', 'Gorong - gorong', 'Bodiandul', '2019', 'Isi bukunya indah sekali', 21, '2020-11-12'),
-(5, 'BK005', 5, 5, 'default.jpg', '2142352 235215413', 'default.pdf', 'Merpati Merah', 'Gunung Galunggung', 'Doni Marsela', '2020', 'Isi Buku', 10, '2020-12-12'),
-(6, 'BK006', 6, 6, 'default.jpg', '223521 4353451', 'default.pdf', 'Mencari Jejak', 'Gorong - gorong', 'Bodiandul', '2019', 'Isi bukunya indah sekali', 21, '2020-11-12'),
-(7, 'BK007', 5, 2, 'default.jpg', '2142352 235215413', 'default.pdf', 'Merak Jingga', 'Gunung Galunggung', 'Doni Marsela', '2020', 'Isi Buku', 10, '2020-12-12'),
-(8, 'BK008', 2, 1, '0', '132-123-234-231', '0', 'CARA MUDAH BELAJAR PEMROGRAMAN C++', 'INFORMATIKA BANDUNG', 'BUDI RAHARJO ', '2012', '<table class=\"table table-bordered\" style=\"background-color: rgb(255, 255, 255); width: 653px; color: rgb(51, 51, 51);\"><tbody><tr><td style=\"padding: 8px; line-height: 1.42857; border-color: rgb(244, 244, 244);\">Tipe Buku</td><td style=\"padding: 8px; line-height: 1.42857; border-color: rgb(244, 244, 244);\">Kertas</td></tr><tr><td style=\"padding: 8px; line-height: 1.42857; border-color: rgb(244, 244, 244);\">Bahasa</td><td style=\"padding: 8px; line-height: 1.42857; border-color: rgb(244, 244, 244);\">Indonesia</td></tr></tbody></table>', 23, '2019-11-23 11:49:57'),
-(9, 'BK009', 9, 6, 'a65b160132d9a3b4714d4aa638af8ac5.jpeg', '9464 5623', '0', 'Filsawat Iwan', 'Hokkaydo', 'Domino', '2020', '<p>Lainnyaaaaaa</p>', 12, '2021-06-08 13:06:01'),
-(10, 'BK010', 2, 3, 'default.jpg', '223521 4353451', 'default.pdf', 'Menelusiri Gang Sempit', 'Gorong - gorong', 'Bodiandul', '2019', 'Isi bukunya indah sekali', 21, '2020-11-12'),
-(11, 'BK011', 3, 5, 'default.jpg', '2142352 235215413', 'default.pdf', 'Pembaca Budiman', 'Gunung Galunggung', 'Doni Marsela', '2020', 'Isi Buku', 10, '2020-12-12'),
-(12, 'BK012', 3, 1, 'default.jpg', '223521 4353451', 'default.pdf', 'Penulis Bingung', 'Gorong - gorong', 'Bodiandul', '2019', 'Isi bukunya indah sekali', 21, '2020-11-12');
+(1, 'BK001', 1, 1, 'buku_default.jpg', '2142352 235215413', 'default.pdf', 'Meneropong Gunung', 'Gunung Galunggung', 'Doni Marsela', '2020', 'Isi Buku', 10, '2020-12-12'),
+(2, 'BK002', 2, 2, 'buku_default.jpg', '223521 4353451', 'default.pdf', 'Membuka Jendela', 'Gorong - gorong', 'Bodiandul', '2019', 'Isi bukunya indah sekali', 21, '2020-11-12'),
+(3, 'BK003', 3, 3, 'buku_default.jpg', '2142352 235215413', 'default.pdf', 'Merpati Putih', 'Gunung Galunggung', 'Doni Marsela', '2020', 'Isi Buku', 10, '2020-12-12'),
+(4, 'BK004', 4, 4, 'buku_default.jpg', '223521 4353451', 'default.pdf', 'Mengapa Bertanya', 'Gorong - gorong', 'Bodiandul', '2019', 'Isi bukunya indah sekali', 21, '2020-11-12'),
+(5, 'BK005', 5, 5, 'buku_default.jpg', '2142352 235215413', 'default.pdf', 'Merpati Merah', 'Gunung Galunggung', 'Doni Marsela', '2020', 'Isi Buku', 10, '2020-12-12'),
+(6, 'BK006', 6, 6, 'buku_default.jpg', '223521 4353451', 'default.pdf', 'Mencari Jejak', 'Gorong - gorong', 'Bodiandul', '2019', 'Isi bukunya indah sekali', 21, '2020-11-12'),
+(7, 'BK007', 5, 2, 'buku_default.jpg', '2142352 235215413', 'default.pdf', 'Merak Jingga', 'Gunung Galunggung', 'Doni Marsela', '2020', 'Isi Buku', 10, '2020-12-12'),
+(8, 'BK008', 2, 1, 'buku_default.jpg', '132-123-234-231', '0', 'CARA MUDAH BELAJAR PEMROGRAMAN C++', 'INFORMATIKA BANDUNG', 'BUDI RAHARJO ', '2012', '<table class=\"table table-bordered\" style=\"background-color: rgb(255, 255, 255); width: 653px; color: rgb(51, 51, 51);\"><tbody><tr><td style=\"padding: 8px; line-height: 1.42857; border-color: rgb(244, 244, 244);\">Tipe Buku</td><td style=\"padding: 8px; line-height: 1.42857; border-color: rgb(244, 244, 244);\">Kertas</td></tr><tr><td style=\"padding: 8px; line-height: 1.42857; border-color: rgb(244, 244, 244);\">Bahasa</td><td style=\"padding: 8px; line-height: 1.42857; border-color: rgb(244, 244, 244);\">Indonesia</td></tr></tbody></table>', 23, '2019-11-23 11:49:57'),
+(9, 'BK009', 9, 6, 'buku_default.jpg', '9464 5623', '0', 'Filsawat Iwan', 'Hokkaydo', 'Domino', '2020', '<p>Lainnyaaaaaa</p>', 12, '2021-06-08 13:06:01'),
+(10, 'BK010', 2, 3, 'buku_default.jpg', '223521 4353451', 'default.pdf', 'Menelusiri Gang Sempit', 'Gorong - gorong', 'Bodiandul', '2019', 'Isi bukunya indah sekali', 21, '2020-11-12'),
+(11, 'BK011', 3, 5, 'buku_default.jpg', '2142352 235215413', 'default.pdf', 'Pembaca Budiman', 'Gunung Galunggung', 'Doni Marsela', '2020', 'Isi Buku', 10, '2020-12-12'),
+(12, 'BK012', 3, 1, 'buku_default.jpg', '223521 4353451', 'default.pdf', 'Penulis Bingung', 'Gorong - gorong', 'Bodiandul', '2019', 'Isi bukunya indah sekali', 21, '2020-11-12');
 
 -- --------------------------------------------------------
 
@@ -156,9 +156,9 @@ CREATE TABLE `tbl_login` (
 --
 
 INSERT INTO `tbl_login` (`id_login`, `anggota_id`, `user`, `pass`, `level`, `nama`, `tempat_lahir`, `tgl_lahir`, `jenkel`, `alamat`, `telepon`, `email`, `tgl_bergabung`, `foto`) VALUES
-(1, 'AG001', 'saadah', '123', 'Petugas', 'saadah', 'Cirebon', '1998-05-10', 'Perempuan', 'Jakarta', '083824569425', 'saadahbundel1100598@gmail.com', '2021-06-01', 'user_1567327491.png'),
-(2, 'AG002', 'adah', '123', 'Anggota', 'adah', 'Purwkarta', '1999-03-13', 'Perempuan', 'Bekasi', '089519150725', 'saadah1325@gmail.com', '2021-06-02', 'user_1589911243.png'),
-(4, 'AG003', 'abdullah', 'd93ec75bca4b7ef88df5a6c591654422', 'Anggota', 'abdullah', 'Cirebon', '2021-06-08', 'Laki-Laki', 'Jl. Singkil-Rimo Kampong Selok Aceh\r\nKecamatan Singkil', '08', 'razali.adam@gmail.com', '2021-06-08', 'user_1623131295.png'),
+(1, 'AG001', 'saadah', '123', 'Petugas', 'saadah', 'Cirebon', '1998-05-10', 'Perempuan', 'Jakarta', '083824569425', 'saadahbundel1100598@gmail.com', '2021-06-01', 'default.jpg'),
+(2, 'AG002', 'adah', '123', 'Anggota', 'adah', 'Purwkarta', '1999-03-13', 'Perempuan', 'Bekasi', '089519150725', 'saadah1325@gmail.com', '2021-06-02', 'default.jpg'),
+(4, 'AG003', 'abdullah', 'd93ec75bca4b7ef88df5a6c591654422', 'Anggota', 'abdullah', 'Cirebon', '2021-06-08', 'Laki-Laki', 'Jl. Singkil-Rimo Kampong Selok Aceh\r\nKecamatan Singkil', '08', 'razali.adam@gmail.com', '2021-06-08', 'default.jpg'),
 (5, 'AG005', 'abubakar', 'ac43724f16e9241d990427ab7c8f4228', 'Anggota', 'Abu Bakar', 'Jakarta', '1998-05-10', 'Laki-Laki', 'Jl. Pedagangan 175', '0854', 'abdullah@ab.com', '2020-05-10', 'default.jpg'),
 (6, 'AG006', 'usman', 'ac43724f16e9241d990427ab7c8f4228', 'Anggota', 'Usman', 'Jakarta', '1999-05-10', 'Laki-Laki', 'Jl. Pedagangan 175', '0854', 'abdullah@ab.com', '2020-05-10', 'default.jpg'),
 (7, 'AG007', 'umar', 'ac43724f16e9241d990427ab7c8f4228', 'Anggota', 'Umar', 'Jakarta', '1999-05-10', 'Laki-Laki', 'Jl. Pedagangan 175', '0854', 'abdulladdh@ab.com', '2020-05-10', 'default.jpg'),
@@ -334,7 +334,7 @@ CREATE TABLE `v_statistik_bulan` (
 --
 DROP TABLE IF EXISTS `v_bulan`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_bulan`  AS SELECT substr(`tbl_pinjam`.`tgl_pinjam`,6,2) AS `bulan` FROM `tbl_pinjam` ;
+CREATE VIEW `v_bulan`  AS SELECT substr(`tbl_pinjam`.`tgl_pinjam`,6,2) AS `bulan` FROM `tbl_pinjam` ;
 
 -- --------------------------------------------------------
 
@@ -343,7 +343,7 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW 
 --
 DROP TABLE IF EXISTS `v_statistik_anggota`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_statistik_anggota`  AS SELECT `tbl_pinjam`.`anggota_id` AS `anggota_id`, count(`tbl_pinjam`.`anggota_id`) AS `jumlah_meminjam`, `tbl_login`.`nama` AS `nama`, `tbl_login`.`tgl_bergabung` AS `tgl_bergabung`, `tbl_login`.`email` AS `email`, `tbl_login`.`jenkel` AS `jenkel`, `tbl_login`.`alamat` AS `alamat`, `tbl_login`.`telepon` AS `telepon`, `tbl_login`.`foto` AS `foto`, `tbl_login`.`user` AS `user` FROM (`tbl_pinjam` join `tbl_login` on(`tbl_pinjam`.`anggota_id` = `tbl_login`.`anggota_id`)) GROUP BY `tbl_pinjam`.`anggota_id` ORDER BY count(`tbl_pinjam`.`anggota_id`) DESC ;
+CREATE VIEW `v_statistik_anggota`  AS SELECT `tbl_pinjam`.`anggota_id` AS `anggota_id`, count(`tbl_pinjam`.`anggota_id`) AS `jumlah_meminjam`, `tbl_login`.`nama` AS `nama`, `tbl_login`.`tgl_bergabung` AS `tgl_bergabung`, `tbl_login`.`email` AS `email`, `tbl_login`.`jenkel` AS `jenkel`, `tbl_login`.`alamat` AS `alamat`, `tbl_login`.`telepon` AS `telepon`, `tbl_login`.`foto` AS `foto`, `tbl_login`.`user` AS `user` FROM (`tbl_pinjam` join `tbl_login` on(`tbl_pinjam`.`anggota_id` = `tbl_login`.`anggota_id`)) GROUP BY `tbl_pinjam`.`anggota_id` ORDER BY count(`tbl_pinjam`.`anggota_id`) DESC ;
 
 -- --------------------------------------------------------
 
@@ -352,7 +352,7 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW 
 --
 DROP TABLE IF EXISTS `v_statistik_buku`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_statistik_buku`  AS SELECT `tbl_pinjam`.`buku_id` AS `buku_id`, count(`tbl_pinjam`.`buku_id`) AS `jumlah_dipinjam`, `tbl_buku`.`id_kategori` AS `id_kategori`, `tbl_buku`.`title` AS `title`, `tbl_buku`.`sampul` AS `sampul`, `tbl_buku`.`penerbit` AS `penerbit`, `tbl_buku`.`pengarang` AS `pengarang`, `tbl_buku`.`thn_buku` AS `thn_buku` FROM (`tbl_pinjam` join `tbl_buku` on(`tbl_pinjam`.`buku_id` = `tbl_buku`.`buku_id`)) GROUP BY `tbl_pinjam`.`buku_id` ORDER BY count(`tbl_pinjam`.`buku_id`) DESC ;
+CREATE VIEW `v_statistik_buku`  AS SELECT `tbl_pinjam`.`buku_id` AS `buku_id`, count(`tbl_pinjam`.`buku_id`) AS `jumlah_dipinjam`, `tbl_buku`.`id_kategori` AS `id_kategori`, `tbl_buku`.`title` AS `title`, `tbl_buku`.`sampul` AS `sampul`, `tbl_buku`.`penerbit` AS `penerbit`, `tbl_buku`.`pengarang` AS `pengarang`, `tbl_buku`.`thn_buku` AS `thn_buku` FROM (`tbl_pinjam` join `tbl_buku` on(`tbl_pinjam`.`buku_id` = `tbl_buku`.`buku_id`)) GROUP BY `tbl_pinjam`.`buku_id` ORDER BY count(`tbl_pinjam`.`buku_id`) DESC ;
 
 -- --------------------------------------------------------
 
@@ -361,7 +361,7 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW 
 --
 DROP TABLE IF EXISTS `v_statistik_bulan`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_statistik_bulan`  AS SELECT `v_bulan`.`bulan` AS `bulan`, count(`v_bulan`.`bulan`) AS `jumlah_bulanan`, `tbl_ref_bulan`.`nama_bulan` AS `nama_bulan` FROM (`v_bulan` join `tbl_ref_bulan` on(`v_bulan`.`bulan` = `tbl_ref_bulan`.`nomor_bulan`)) GROUP BY `v_bulan`.`bulan` ORDER BY `v_bulan`.`bulan` ASC ;
+CREATE VIEW `v_statistik_bulan`  AS SELECT `v_bulan`.`bulan` AS `bulan`, count(`v_bulan`.`bulan`) AS `jumlah_bulanan`, `tbl_ref_bulan`.`nama_bulan` AS `nama_bulan` FROM (`v_bulan` join `tbl_ref_bulan` on(`v_bulan`.`bulan` = `tbl_ref_bulan`.`nomor_bulan`)) GROUP BY `v_bulan`.`bulan` ORDER BY `v_bulan`.`bulan` ASC ;
 
 --
 -- Indexes for dumped tables
