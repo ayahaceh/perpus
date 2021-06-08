@@ -29,7 +29,7 @@ function showPage() {
 
 /*-- append to footer bottom --*/
 
-$("<p>Made with <i class='fa fa-heart'></i> Codekop</p>").appendTo("#made_with"); //appendTo: Append at inside bottom
+$("<p>Made with <i class='fa fa-heart'></i>Alie</p>").appendTo("#made_with"); //appendTo: Append at inside bottom
 
 /*-- date picker --*/
 $( document ).ready(function() {

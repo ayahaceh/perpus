@@ -9,21 +9,19 @@
 
 <b>Petugas Perpus : </b>
 <br/>
-User : anang
+User : saadah
 <br/>
-Pass : 123
+Pass : rahasia
 
 <b>Anggota Perpus :</b>
 <br/>
-User : fauzan
+User : adah
 <br/>
-Pass : 123
+Pass : rahasia
 
 ** Jika ada issues atau revisi atau menambahkan fitur silahkan pull request di repository ini
 
 ## Contributors
-<a href="https://fauzan.codekop.com/"> Fauzan Falah</a>
-
-My Blog : <a href="https://www.codekop.com/"> Codekop.com</a>
+<a href="https://instagram.com/ayahaceh"> Alie</a>
 
 Gunakan Aplikasi dengan bijak, dan selamat belajar

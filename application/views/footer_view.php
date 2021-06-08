@@ -2,9 +2,10 @@
 <div class="clearfix"></div>
 <footer class="main-footer">
   <div id="mycredit" class="text-success"><strong> Copyright &copy; <?php echo date('Y'); ?> Sistem Informasi Perpustakaan
-    </strong> All rights | Page rendered in <strong>{elapsed_time}</strong> seconds.
+    </strong> All rights reserved.
     <div class="pull-right">
-      <span id="made_with"></span>
+      <!-- <span id="made_with"></span> -->
+      Page rendered in <strong>{elapsed_time}</strong> seconds.
     </div>
   </div>
 </footer>
