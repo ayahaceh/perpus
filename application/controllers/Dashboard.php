@@ -1,18 +1,23 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Dashboard extends CI_Controller {
-	function __construct(){
-	 parent::__construct();
-	 	//validasi jika user belum login
-     $this->data['CI'] =& get_instance();
-     $this->load->helper(array('form', 'url'));
-     $this->load->model('M_Admin');
-	 	 if($this->session->userdata('masuk_sistem_rekam') != TRUE){
-				 $url=base_url('login');
-				 redirect($url);
-		 }
-	 }
+class Dashboard extends CI_Controller
+{
+	function __construct()
+	{
+		parent::__construct();
+		//validasi jika user belum login
+		$this->data['CI'] = &get_instance();
+		$this->load->helper(array('form', 'url'));
+		$this->load->model('M_Admin');
+		// data model statistik
+		$this->load->model('M_statistik');
+
+		if ($this->session->userdata('masuk_sistem_rekam') != TRUE) {
+			$url = base_url('login');
+			redirect($url);
+		}
+	}
 	/**
 	 * Index Page for this controller.
 	 *
@@ -29,18 +34,28 @@ class Dashboard extends CI_Controller {
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
 	public function index()
-	{	
+	{
+		// Statistik Buku
+		$this->data['buku'] = $this->M_statistik->get_table('v_statistik_buku', 5);
+		$this->data['anggota'] = $this->M_statistik->get_table('v_statistik_anggota', 5);
+		$this->data['terbaru'] = $this->M_statistik->get_terbaru('tbl_buku', 5);
+		// var_dump($this->data['terbaru']);
+		$this->data['foto'] = $this->M_statistik->get_table('v_statistik_anggota', 8);
+		$this->data['bulan'] = $this->M_statistik->get_grafik('v_statistik_bulan');
+		// var_dump($this->data['anggota']);
+		// print_r($this->data['anggota']);
+
 		$this->data['idbo'] = $this->session->userdata('ses_id');
 		$this->data['title_web'] = 'Dashboard ';
-		$this->data['count_pengguna']=$this->db->query("SELECT * FROM tbl_login")->num_rows();
-		$this->data['count_buku']=$this->db->query("SELECT * FROM tbl_buku")->num_rows();
-		$this->data['count_pinjam']=$this->db->query("SELECT * FROM tbl_pinjam WHERE status = 'Dipinjam'")->num_rows();
-		$this->data['count_kembali']=$this->db->query("SELECT * FROM tbl_pinjam WHERE status = 'Di Kembalikan'")->num_rows();
-		$this->load->view('header_view',$this->data);
-		$this->load->view('sidebar_view',$this->data);
-		$this->load->view('dashboard_view',$this->data);
-		$this->load->view('footer_view',$this->data);
-		
-	}
+		$this->data['count_pengguna'] = $this->db->query("SELECT * FROM tbl_login")->num_rows();
+		$this->data['count_buku'] = $this->db->query("SELECT * FROM tbl_buku")->num_rows();
+		$this->data['count_pinjam'] = $this->db->query("SELECT * FROM tbl_pinjam WHERE status = 'Dipinjam'")->num_rows();
+		$this->data['count_kembali'] = $this->db->query("SELECT * FROM tbl_pinjam WHERE status = 'Di Kembalikan'")->num_rows();
 
+
+		$this->load->view('header_view', $this->data);
+		$this->load->view('sidebar_view', $this->data);
+		$this->load->view('dashboard_view', $this->data);
+		$this->load->view('footer_view', $this->data);
+	}
 }

@@ -79,76 +79,24 @@
 
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-6">
-        <div class="box">
-          <div class="box-header bg-info">
-            <h4 class="text-primary">Anggota paling aktif</h4>
-          </div>
-          <div class="box-body">
-            <p class="text-center">
-              <strong>Anggota Paling Aktif meminjam</strong>
-            </p>
-
-            <div class="progress-group">
-              <span class="progress-text">Nama Anggota</span>
-              <span class="progress-number"><b>160</b>/200</span>
-
-              <div class="progress sm">
-                <div class="progress-bar progress-bar-aqua" style="width: 60%"></div>
-              </div>
-            </div>
-
-          </div>
-          <div class="box-footer">
-
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="box">
-          <div class="box-header bg-info">
-            <h4 class="text-primary">Buku paling sering dipinjam</h4>
-          </div>
-          <div class="box-body">
-            <p class="text-center">
-              <strong>Buku paling sering dipinjam</strong>
-            </p>
-
-            <div class="progress-group">
-              <span class="progress-text">Judul Buku</span>
-              <span class="progress-number"><b>110</b>/200</span>
-
-              <div class="progress sm">
-                <div class="progress-bar progress-bar-aqua" style="width: 50%"></div>
-              </div>
-            </div>
-
-          </div>
-          <div class="box-footer">
-
-          </div>
-        </div>
-      </div>
-    </div>
 
 
     <div class="row">
       <div class="col-md-12">
-        <div class="box">
-          <div class="box-header with-border">
+        <div class="box box-success">
+          <!-- <div class="box-header with-border">
             <h3 class="box-title">Grafik jumlah peminjam</h3>
-          </div>
+          </div> -->
           <!-- /.box-header -->
           <div class="box-body">
             <div class="row">
               <p class="text-center">
-                <strong>Periode 1 Januari 2021 - 30 Juni 2021</strong>
+                <strong>Grafik jumlah Buku Terpinjam Tahun 2021</strong>
               </p>
 
               <div class="chart">
                 <!-- Sales Chart Canvas -->
-                <canvas id="salesChart" style="height: 180px;"></canvas>
+                <canvas id="bulanChart" style="height: 180px;"></canvas>
               </div>
               <!-- /.chart-responsive -->
             </div>
@@ -158,8 +106,156 @@
     </div>
 
 
+    <div class="row">
+
+      <!-- WIDGED FOTO  -->
+      <div class="col-md-6">
+        <div class="box box-success">
+          <div class="box-body">
+            <p class="text-center">
+              <strong>Anggota Paling Aktif</strong>
+            </p>
+            <ul class="users-list clearfix">
+              <?php foreach ($foto as $ag) {
+                $fotonya = $ag['foto'];
+                if ($fotonya == "") {
+                  $fotonya = 'default.png';
+                }
+              ?>
+                <li>
+                  <img src="<?php echo base_url(); ?>assets_style/image/<?php echo $fotonya; ?>" class="img-responsive" style="height: 90px;width:auto;" alt="User Image">
+                  <a class="users-list-name" href="#"><?= $ag['nama'] ?> </a>
+                </li>
+              <?php } ?>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- AKHIR WIDGED FOTO  -->
+
+
+      <!-- WIDGED BUKU  -->
+      <div class="col-md-6">
+        <div class="box box-success">
+          <!-- <div class="box-header bg-info">
+            <h4 class="text-primary">Buku paling sering dipinjam</h4>
+          </div> -->
+          <div class="box-body">
+            <p class="text-center">
+              <strong>Buku paling sering dipinjam</strong>
+            </p>
+            <?php foreach ($buku as $b) {
+              // Persentase Dipinjam 
+              $pembagi  = 10;
+              $angka_buku = $b['jumlah_dipinjam'];
+              $persen = ($angka_buku / $pembagi) * 100;
+              // Warna progress
+              if ($angka_buku > 3) {
+                $warna = 'success';
+              } elseif ($angka_buku > 10) {
+                $warna = 'primary';
+              } else {
+                $warna = 'aqua';
+              }
+            ?>
+              <div class="progress-group">
+                <span class="progress-text"><?= $b['title'] ?></span>
+                <span class="progress-number"><b><?= $angka_buku ?></b>/<?= $pembagi ?></span>
+
+                <div class="progress sm">
+                  <div class="progress-bar progress-bar-<?= $warna ?>" style="width: <?= $persen ?>%"></div>
+                </div>
+              </div>
+            <?php } ?>
+          </div>
+          <div class="box-footer">
+
+          </div>
+        </div>
+      </div>
+      <!-- AKHIR WIDGED BUKU  -->
+
+
+      <!-- WIDGED SERING MEMINJAM  -->
+      <div class="col-md-6">
+        <div class="box box-success">
+          <div class="box-body">
+            <p class="text-center">
+              <strong>Anggota Paling Aktif meminjam</strong>
+            </p>
+            <?php foreach ($anggota as $ag) {
+              // Persentase Dipinjam 
+              $pembagi    = 10;
+              $angka_anggota = $ag['jumlah_meminjam'];
+              $persen = ($angka_anggota / $pembagi) * 100;
+              // Warna progress
+              if ($angka_anggota > 4) {
+                $warna = 'success';
+              } elseif ($angka_anggota > 10) {
+                $warna = 'primary';
+              } else {
+                $warna = 'aqua';
+              }
+            ?>
+              <div class="progress-group">
+                <span class="progress-text"><?= $ag['nama'] ?> </span>
+                <!-- <span class="text-green"> [ # <?= $ag['anggota_id'] ?>]</span> -->
+
+                <span class="progress-number"><b><?= $angka_anggota ?></b>/<?= $pembagi ?></span>
+
+                <div class="progress sm">
+                  <div class="progress-bar progress-bar-<?= $warna ?>" style="width: <?= $persen ?>%"></div>
+                </div>
+              </div>
+            <?php } ?>
+          </div>
+          <div class="box-footer">
+
+          </div>
+        </div>
+      </div>
+      <!-- AKHIR WIDGED SERING MEMINJAM  -->
+
+      <!-- WIDGED BUKU TERBARU  -->
+      <div class="col-md-6">
+        <div class="box box-success">
+          <!-- /.box-header -->
+          <div class="box-body">
+            <ul class="products-list product-list-in-box">
+              <?php foreach ($terbaru as $ag) {
+                $foto = $ag['sampul'];
+                if ($foto == "") {
+                  $foto = 'default.png';
+                }
+              ?>
+                <li class="item">
+                  <div class="product-img">
+                    <img src="<?php echo base_url(); ?>assets_style/image/<?php echo $foto; ?>" alt="Product Image">
+                  </div>
+                  <div class="product-info">
+                    <a href="javascript:void(0)" class="product-title"><?= $ag['title'] ?>
+                      <span class="label label-warning pull-right"><?= $ag['buku_id'] ?></span></a>
+                    <span class="product-description">
+                      Pengarang : <?= $ag['pengarang'] ?> - Penerbit : <?= $ag['penerbit'] ?> , <?= $ag['thn_buku'] ?>
+                    </span>
+                  </div>
+                </li>
+              <?php } ?>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+      <!-- AKHIR WIDGED BUKU TERBARU  -->
+
+
+
+
+    </div>
 
 
   </section>
 </div>
+
+
 <!-- /.content -->
