@@ -111,7 +111,7 @@
       <!-- WIDGED FOTO  -->
       <div class="col-md-6">
         <div class="box box-success">
-          <div class="box-body">
+          <div class="box-body bg-success">
             <p class="text-center">
               <strong>Anggota Paling Aktif</strong>
             </p>

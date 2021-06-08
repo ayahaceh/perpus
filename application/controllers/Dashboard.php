@@ -38,7 +38,7 @@ class Dashboard extends CI_Controller
 		// Statistik Buku
 		$this->data['buku'] = $this->M_statistik->get_table('v_statistik_buku', 5);
 		$this->data['anggota'] = $this->M_statistik->get_table('v_statistik_anggota', 5);
-		$this->data['terbaru'] = $this->M_statistik->get_terbaru('tbl_buku', 5);
+		$this->data['terbaru'] = $this->M_statistik->get_terbaru('tbl_buku', 4);
 		// var_dump($this->data['terbaru']);
 		$this->data['foto'] = $this->M_statistik->get_table('v_statistik_anggota', 8);
 		$this->data['bulan'] = $this->M_statistik->get_grafik('v_statistik_bulan');
