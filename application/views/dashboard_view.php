@@ -234,7 +234,7 @@
                   </div>
                   <div class="product-info">
                     <a href="javascript:void(0)" class="product-title"><?= $ag['title'] ?>
-                      <span class="label label-warning pull-right"><?= $ag['buku_id'] ?></span></a>
+                      <span class="label label-success pull-right"><?= $ag['buku_id'] ?></span></a>
                     <span class="product-description">
                       Pengarang : <?= $ag['pengarang'] ?> - Penerbit : <?= $ag['penerbit'] ?> , <?= $ag['thn_buku'] ?>
                     </span>
