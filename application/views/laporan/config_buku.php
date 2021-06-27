@@ -24,19 +24,19 @@
                         <div class="box box-success">
                             <div class="box-header with-border bg-success">
                                 <h4>Pilih Range Tanggal</h4>
-                            </div>
+                            </div><br /><br />
                             <form method="post" action="<?= base_url('laporan/buku_baru_hasil'); ?>" target="blank" method="post" accept-charset="utf-8" enctype="multipart/form-data">
                                 <div class="box-body">
                                     <div class="form-group">
-                                        <label for="tgl_mulai" class="col-sm-4" style="text-align: right;">Mulai Tanggal </label>
+                                        <label for="tgl_mulai" class="col-sm-4" style="text-align: right;">Dari Tanggal </label>
                                         <div class="col-sm-8">
                                             <input type="date" name="tgl_start" class="form-control" id="tgl_mulai" placeholder="Mulai" required>
                                         </div>
                                     </div>
                                     <br />
+                                    <br />
                                     <div class="form-group">
                                         <label for="tgl_sampai" class="col-sm-4" style="text-align: right;">Sampai dengan Tanggal </label>
-
                                         <div class="col-sm-8">
                                             <input type="date" name="tgl_end" class="form-control" id="tgl_sampai" placeholder="Sampai" required>
                                         </div>
